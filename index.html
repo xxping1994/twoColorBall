@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>双色球模拟</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div class="container">
+		<!--提示信息-->
+		<div class="tip">注意：红球33选6，蓝球16选1。可以手动选择，也可以模拟机器选择，仅支持单注。</div>
+		<hr>
+		<!--红区-->
+		<div id="redzone">
+			<b class="red">红球：</b>
+			<ul id="redBalls" class="redBalls"></ul>
+		</div>
+		<hr>
+		<!--蓝区-->
+		<div id="bluezone">
+			<b class="blue">蓝球：</b>
+			<ul id="blueBalls" class="blueBalls"></ul>
+		</div>
+		<hr>
+		<!--选中区-->
+		<div id="checkzone" class="checkzone">
+			<b class="green">选中：</b>
+			<ul class="check_red" id="check_red"></ul> 
+			<ul class="check_blue" id="check_blue"></ul> 
+		</div>
+		<hr>
+		<!--按钮区-->
+		<div id="btnzoon" class="btn">
+			 <button onclick="getRandom()">机选</button>
+			 <button  onclick="reset()">重置</button>
+			 <!--<button>开奖</button>-->
+		
+		</div>
+	</div>	
+	<script src="index.js"></script>
+</body>
+</html>
